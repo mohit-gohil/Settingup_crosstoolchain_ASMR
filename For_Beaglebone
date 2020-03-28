@@ -1,0 +1,27 @@
+apt-cache search cross-build-essential
+
+sudo apt install crossbuild-essential-armhf
+
+arm-linux-gnueabihf-g++ -v
+
+sudo apt install net-tools
+
+ifconfig
+
+ssh debian@192.168.2.27
+
+ls
+
+cd temp/
+
+arm-linux-gnueabihf-g++ hello.c -o hello.x
+
+sftp debian@192.168.2.27 
+
+put hello.x
+
+ssh 192.168.2.27 -l debian 
+
+./hello.x
+
+
