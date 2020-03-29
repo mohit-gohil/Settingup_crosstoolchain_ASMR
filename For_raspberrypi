@@ -1,1 +1,17 @@
+ ssh pi@169.254.164.20
+ 
+ wget https://github.com/raspberrypi/tools/archive/master.zip
+ 
+ ls
+ 
+ cd tools/arm-bcm2708/
+ 
+ cd gcc-linaro-arm-linux-gnueabihf-raspbian-x64/
+ 
+ ls
+ 
+ echo $PATH
+ 
+ arm-linux-gnueabihf-g++ hello.c -o hello.x 
 
+./a.out
